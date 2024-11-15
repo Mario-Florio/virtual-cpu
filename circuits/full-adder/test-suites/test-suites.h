@@ -1,0 +1,6 @@
+#ifndef virtualcpu_circuits_fulladder_testsuites_h
+#define virtualcpu_circuits_fulladder_testsuites_h
+
+void fulladder_testsuites();
+
+#endif
