@@ -60,7 +60,7 @@ static void truthtable_testsuite() {
 
     a = 0, b = 1, cin = 1, sub = 1;
     full_adder_subtractor(a, b, cin, sub, output);
-    it("0 1 1   1 -> 0        0", output[0] == 0 && output[1] == 0);
+    it("0 1 1   1 -> 0        1", output[0] == 0 && output[1] == 1);
 
     a = 1, b = 0, cin = 0, sub = 1;
     full_adder_subtractor(a, b, cin, sub, output);
