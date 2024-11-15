@@ -19,6 +19,10 @@ char _nor(char a, char b) {
     return !(a || b);
 }
 
+char _xnor(char a, char b) {
+    return !(a ^ b);
+}
+
 char _and(char a, char b) {
     return a && b;
 }

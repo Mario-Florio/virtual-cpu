@@ -4,20 +4,22 @@
 
 static void buffer_testsuite();
 static void not_testsuite();
-static void and_testsuite();
-static void nand_testsuite();
 static void or_testsuite();
 static void nor_testsuite();
 static void xor_testsuite();
+static void xnor_testsuite();
+static void and_testsuite();
+static void nand_testsuite();
 
 void logicgates_testsuites() {
     suite("==========BUFFER==========", buffer_testsuite);
     suite("==========NOT=============", not_testsuite);
-    suite("==========AND=============", and_testsuite);
-    suite("==========NAND============", nand_testsuite);
     suite("==========OR==============", or_testsuite);
     suite("==========NOR=============", nor_testsuite);
     suite("==========XOR=============", xor_testsuite);
+    suite("==========XNOR============", xnor_testsuite);
+    suite("==========AND=============", and_testsuite);
+    suite("==========NAND============", nand_testsuite);
 }
 
 static void buffer_testsuite() {
@@ -49,6 +51,13 @@ static void xor_testsuite() {
     it("0 1 -> 1", _xor(0, 1) == 1);
     it("1 0 -> 1", _xor(1, 0) == 1);
     it("1 1 -> 0", _xor(1, 1) == 0);
+}
+
+static void xnor_testsuite() {
+    it("0 0 -> 1", _xnor(0, 0) == 1);
+    it("0 1 -> 0", _xnor(0, 1) == 0);
+    it("1 0 -> 0", _xnor(1, 0) == 0);
+    it("1 1 -> 1", _xnor(1, 1) == 1);
 }
 
 static void and_testsuite() {
