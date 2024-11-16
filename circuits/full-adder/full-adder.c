@@ -2,12 +2,10 @@
 
 char* full_adder(char a, char b, char cin, char* output) {
 
-    char d = _xor(a, b);
-    char sum = _xor(d, cin);
+    char a_xor_b = _xor(a, b);
+    char sum = _xor(a_xor_b, cin);
 
-    char e = _and(a, b);
-    char f = _and(cin, d);
-    char cout = _xor(e, f);
+    char cout = _xor(_and(a, b), _and(cin, a_xor_b));
 
     output[0] = sum;
     output[1] = cout;
