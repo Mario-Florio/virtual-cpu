@@ -1,11 +1,12 @@
 #include "../../logic-gates/logic-gates.h"
 
 char* shifter(char a, char cin, char div, char* output) { 
-    if (div) {
-        output[0] = a, output[1] = cin, output[2] = 0, output[3] = 0;
-    } else {
-        output[0] = 0, output[1] = 0, output[2] = a, output[3] = cin;
-    }
+    char bout = _and(div, a);
+    char res0 = _and(div, cin);
+    char res1 = _and(a, _xor(div, a));
+    char cout = _and(cin, _xor(div, cin));
+
+    output[0] = bout, output[1] = res0, output[2] = res1, output[3] = cout;
 
     return output;
 }
