@@ -1,13 +1,15 @@
 #ifndef virtualcpu_logicgates_h
 #define virtualcpu_logicgates_h
 
-char _buffer(char on);
-char _not(char on);
-char _or(char a, char b);
-char _nor(char a, char b);
-char _xor(char a, char b);
-char _xnor(char a, char b);
-char _and(char a, char b);
-char _nand(char a, char b);
+#include "../common.h"
+
+Bit _buffer(Bit on);
+Bit _not(Bit on);
+Bit _or(Bit a, Bit b);
+Bit _nor(Bit a, Bit b);
+Bit _xor(Bit a, Bit b);
+Bit _xnor(Bit a, Bit b);
+Bit _and(Bit a, Bit b);
+Bit _nand(Bit a, Bit b);
 
 #endif

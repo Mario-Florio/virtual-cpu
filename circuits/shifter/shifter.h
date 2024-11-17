@@ -1,6 +1,8 @@
 #ifndef virtualcpu_circuits_shifter_h
 #define virtualcpu_circuits_shifter_h
 
-char* shifter(char a, char cin, char div, char* ouput);
+#include "../../common.h"
+
+Bit* shifter(Bit a, Bit cin, Bit div, Bit* ouput);
 
 #endif

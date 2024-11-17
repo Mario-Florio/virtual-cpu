@@ -1,32 +1,33 @@
+#include "./logic-gates.h"
 
-char _buffer(char on) {
+Bit _buffer(Bit on) {
     return on;
 }
 
-char _not(char on) {
+Bit _not(Bit on) {
     return !on;
 }
 
-char _or(char a, char b) {
+Bit _or(Bit a, Bit b) {
     return a || b;
 }
 
-char _xor(char a, char b) {
+Bit _xor(Bit a, Bit b) {
     return a ^ b;
 }
 
-char _nor(char a, char b) {
+Bit _nor(Bit a, Bit b) {
     return !(a || b);
 }
 
-char _xnor(char a, char b) {
+Bit _xnor(Bit a, Bit b) {
     return !(a ^ b);
 }
 
-char _and(char a, char b) {
+Bit _and(Bit a, Bit b) {
     return a && b;
 }
 
-char _nand(char a, char b) {
+Bit _nand(Bit a, Bit b) {
     return !(a && b);
 }

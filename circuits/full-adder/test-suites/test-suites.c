@@ -10,8 +10,8 @@ void fulladder_testsuites() {
 static void truthtable_testsuite() {
     it("A B Cin  S Cout", 1);
 
-    char a = 0, b = 0, cin = 0;
-    char output[2] = { 0, 0 };
+    Bit a = 0, b = 0, cin = 0;
+    Bit output[2] = { 0, 0 };
 
     full_adder(a, b, cin, output);
     it("0 0 0 -> 0 0", output[0] == 0 && output[1] == 0);

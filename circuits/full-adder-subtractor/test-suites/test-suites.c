@@ -10,8 +10,8 @@ void fulladdersubtractor_testsuites() {
 static void truthtable_testsuite() {
     it("A B Cin Sub  Sum/Diff Cout/Bout", 1);
 
-    char a = 0, b = 0, cin = 0, sub = 0;
-    char output[2] = { 0, 0 };
+    Bit a = 0, b = 0, cin = 0, sub = 0;
+    Bit output[2] = { 0, 0 };
 
     // ADDITION
     full_adder_subtractor(a, b, cin, sub, output);

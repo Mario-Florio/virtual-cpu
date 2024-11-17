@@ -1,2 +1,3 @@
+#include "../../common.h"
 
-char* full_adder(char a, char b, char cin, char* output);
+Bit* full_adder(Bit a, Bit b, Bit cin, Bit* output);

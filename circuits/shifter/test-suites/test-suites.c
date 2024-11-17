@@ -10,8 +10,8 @@ void shifter_testsuites() {
 static void truthtable_testsuite() {
     it("A Cin Div -> Bout R0 R1 Cout", 1);
 
-    char a = 0, cin = 0, div = 0;
-    char output[4] = { 0, 0, 0 };
+    Bit a = 0, cin = 0, div = 0;
+    Bit output[4] = { 0, 0, 0 };
 
     shifter(a, cin, div, output);
     it("0 0   0   -> 0    0  0  0", output[0] == 0 &&
