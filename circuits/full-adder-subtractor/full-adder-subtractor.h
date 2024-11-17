@@ -4,6 +4,6 @@
 #include "../../common.h"
 
 Bit* full_adder_subtractor(Bit a, Bit b, Bit cin,
-                            Bit sub, Bit* output);
+                           Bit sub, Bit* output);
 
 #endif

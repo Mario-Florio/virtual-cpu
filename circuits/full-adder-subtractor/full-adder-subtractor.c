@@ -2,7 +2,7 @@
 #include "../../logic-gates/logic-gates.h"
 #include "../full-adder/full-adder.h"
 
-char* full_adder_subtractor(char a, char b, char cin, char sub, char* output) {
+Bit* full_adder_subtractor(Bit a, Bit b, Bit cin, Bit sub, Bit* output) {
 
     full_adder(_xor(a, sub), b, cin, output);
 
