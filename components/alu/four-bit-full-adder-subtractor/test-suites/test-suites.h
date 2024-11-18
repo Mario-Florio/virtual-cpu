@@ -1,0 +1,6 @@
+#ifndef virtualcpu_components_alu_fourbitfulladdersubtractor_testsuites_h
+#define virtualcpu_components_alu_fourbitfulladdersubtractor_testsuites_h
+
+void fourbitfulladdersubtractor_testsuites();
+
+#endif
